@@ -1,0 +1,14 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  text-align: center;
+}
+
+.buttons-container > button {
+  margin: 8px 8px 25px 0px;
+  cursor: pointer;
+}
+
+#status {
+  padding: 3px 6px;
+  border-radius: 3px;
+}
