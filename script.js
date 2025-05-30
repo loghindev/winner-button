@@ -20,9 +20,9 @@ function clearOldButtons() {
   const buttons = document.querySelectorAll(".buttons-container > button");
   if (buttons.length) {
     buttons.forEach((btn) => btn.remove());
+    statusDisplay.style.backgroundColor = "transparent";
+    statusDisplay.textContent = "";
   }
-  statusDisplay.style.backgroundColor = "transparent";
-  statusDisplay.textContent = "";
 }
 
 function createLoserButton(index) {
