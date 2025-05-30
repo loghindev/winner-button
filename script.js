@@ -5,8 +5,9 @@ function generateButtons() {
   clearOldButtons();
   setTimeout(() => {
     const myInput = document.getElementById("input");
-    if (myInput.value === "") {
+    if (myInput.value === "" || typeof myInput.value === "string") {
       myInput.setAttribute("placeholder", "Please add a value");
+      myInput.value = "";
       return;
     }
     for (let i = 0; i < Number(myInput.value); ++i) {
