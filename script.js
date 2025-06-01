@@ -5,7 +5,7 @@ function generateButtons() {
   clearOldButtons();
   setTimeout(() => {
     const myInput = document.getElementById("input");
-    if (myInput.value === "" || typeof myInput.value === "string") {
+    if (myInput.value === "") {
       myInput.setAttribute("placeholder", "Please add a value");
       myInput.value = "";
       return;
